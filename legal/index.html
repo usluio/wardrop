@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AIWardrobe Legal</title>
+    <meta
+      name="description"
+      content="AIWardrobe terms, privacy policy, data rights, and subscription terms."
+    />
+    <style>
+      :root {
+        --bg: #0d0d0d;
+        --surface: #151515;
+        --line: rgba(255, 255, 255, 0.14);
+        --text: #f7f2ee;
+        --muted: rgba(247, 242, 238, 0.7);
+        --soft: rgba(247, 242, 238, 0.08);
+        --accent: #d8b392;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        letter-spacing: 0;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .hero {
+        min-height: 88svh;
+        position: relative;
+        display: grid;
+        align-items: end;
+        overflow: hidden;
+        isolation: isolate;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -2;
+        background:
+          linear-gradient(180deg, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.38) 44%, #0d0d0d 96%),
+          url("../public/results/result-1.png") center 18% / cover no-repeat;
+        transform: scale(1.02);
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background: rgba(0, 0, 0, 0.18);
+      }
+
+      .nav {
+        position: absolute;
+        inset: 0 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 22px clamp(18px, 4vw, 56px);
+        z-index: 2;
+      }
+
+      .brand {
+        font-weight: 700;
+        font-size: 15px;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 18px;
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.78);
+      }
+
+      .nav-links a {
+        text-decoration: none;
+      }
+
+      .hero-inner {
+        width: min(980px, calc(100% - 36px));
+        margin: 0 auto;
+        padding: 0 0 9svh;
+      }
+
+      .eyebrow {
+        margin: 0 0 12px;
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        max-width: 760px;
+        font-size: clamp(44px, 8vw, 92px);
+        line-height: 0.95;
+        font-weight: 760;
+      }
+
+      .hero-copy {
+        max-width: 560px;
+        margin: 22px 0 0;
+        color: rgba(255, 255, 255, 0.78);
+        font-size: clamp(16px, 2vw, 20px);
+        line-height: 1.5;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 28px;
+      }
+
+      .button {
+        min-height: 46px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        padding: 0 18px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 650;
+      }
+
+      .button.primary {
+        background: var(--text);
+        color: #111;
+      }
+
+      .button.secondary {
+        border: 1px solid rgba(255, 255, 255, 0.26);
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      main {
+        background: var(--bg);
+      }
+
+      .section {
+        width: min(1040px, calc(100% - 36px));
+        margin: 0 auto;
+        padding: 76px 0;
+      }
+
+      .section + .section {
+        border-top: 1px solid var(--line);
+      }
+
+      .section-header {
+        display: grid;
+        grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+        gap: 44px;
+        margin-bottom: 42px;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: clamp(28px, 4vw, 48px);
+        line-height: 1.05;
+        font-weight: 720;
+      }
+
+      .lead {
+        margin: 0;
+        color: var(--muted);
+        font-size: 17px;
+        line-height: 1.65;
+      }
+
+      .legal-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 26px 40px;
+      }
+
+      .legal-block {
+        padding-top: 18px;
+        border-top: 1px solid var(--line);
+      }
+
+      h3 {
+        margin: 0 0 10px;
+        font-size: 16px;
+        font-weight: 700;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.7;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+
+      .notice {
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        padding: 28px 0;
+        color: rgba(255, 255, 255, 0.82);
+        font-size: 18px;
+        line-height: 1.55;
+      }
+
+      .contact {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 24px;
+        align-items: center;
+      }
+
+      footer {
+        width: min(1040px, calc(100% - 36px));
+        margin: 0 auto;
+        padding: 26px 0 42px;
+        border-top: 1px solid var(--line);
+        color: rgba(255, 255, 255, 0.54);
+        font-size: 13px;
+      }
+
+      @media (max-width: 760px) {
+        .nav {
+          align-items: flex-start;
+          gap: 12px;
+        }
+
+        .nav-links {
+          gap: 12px;
+          font-size: 12px;
+        }
+
+        .hero {
+          min-height: 86svh;
+        }
+
+        .section {
+          padding: 56px 0;
+        }
+
+        .section-header,
+        .legal-grid,
+        .contact {
+          grid-template-columns: 1fr;
+        }
+
+        .section-header {
+          gap: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav" aria-label="Legal navigation">
+        <div class="brand">AIWardrobe</div>
+        <div class="nav-links">
+          <a href="./terms.html">Terms</a>
+          <a href="./privacy.html">Privacy</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+      <div class="hero-inner">
+        <p class="eyebrow">Legal center · Last updated June 25, 2026</p>
+        <h1>Terms and privacy for AI try-on.</h1>
+        <p class="hero-copy">
+          This page explains how AIWardrobe handles subscriptions, credits,
+          uploaded photos, generated images, and account data.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="./privacy.html">Read privacy policy</a>
+          <a class="button secondary" href="./terms.html">Read terms</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="terms">
+        <div class="section-header">
+          <h2>Terms of service</h2>
+          <p class="lead">
+            By creating an account or using AIWardrobe, you agree to use the
+            service responsibly and to follow the subscription, credit, and
+            content rules below.
+          </p>
+        </div>
+        <div class="legal-grid">
+          <div class="legal-block">
+            <h3>Account</h3>
+            <p>
+              You are responsible for the accuracy of your account information
+              and for keeping access to your account secure.
+            </p>
+          </div>
+          <div class="legal-block">
+            <h3>Subscriptions and credits</h3>
+            <p>
+              One generated image costs one credit. Paid packages are processed
+              through the app store billing provider. Subscriptions renew unless
+              they are canceled before renewal.
+            </p>
+          </div>
+          <div class="legal-block">
+            <h3>Uploaded content</h3>
+            <p>
+              You must only upload photos and outfit images you have the right
+              to use. Do not upload illegal, abusive, explicit, or harmful
+              content.
+            </p>
+          </div>
+          <div class="legal-block">
+            <h3>Generated results</h3>
+            <p>
+              AI output can vary. AIWardrobe does not guarantee that every
+              generated image will be accurate, realistic, or suitable for every
+              use case.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="privacy">
+        <div class="section-header">
+          <h2>Privacy policy</h2>
+          <p class="lead">
+            AIWardrobe collects the minimum data needed to provide virtual
+            try-on, account access, subscription handling, and support.
+          </p>
+        </div>
+        <div class="legal-grid">
+          <div class="legal-block">
+            <h3>Data we process</h3>
+            <ul>
+              <li>Account details such as email, name, and login records.</li>
+              <li>Uploaded photos, outfit images, and generated results.</li>
+              <li>Credit balance, generation history, and payment references.</li>
+              <li>Support messages and basic device or usage diagnostics.</li>
+            </ul>
+          </div>
+          <div class="legal-block">
+            <h3>How we use data</h3>
+            <p>
+              We use data to generate try-on images, maintain saved photos,
+              manage credits and subscriptions, prevent abuse, improve
+              reliability, and respond to support requests.
+            </p>
+          </div>
+          <div class="legal-block">
+            <h3>Service providers</h3>
+            <p>
+              Uploaded photos and outfit images may be sent to configured AI
+              processing providers. Payment processing is handled by app store
+              and subscription providers; AIWardrobe does not store raw card
+              data.
+            </p>
+          </div>
+          <div class="legal-block">
+            <h3>Retention and deletion</h3>
+            <p>
+              Data is kept while your account is active or as required for
+              operational and legal reasons. You may request account deletion,
+              which removes personal data, photos, and generation history from
+              active systems subject to required retention duties.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="notice">
+          AIWardrobe does not sell personal data to advertisers. User photos are
+          used to provide the try-on experience, maintain reliability, prevent
+          abuse, and support account features.
+        </p>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="contact">
+          <div>
+            <h2>Questions or data requests</h2>
+            <p class="lead">
+              For access, correction, deletion, subscription, or privacy
+              requests, contact AIWardrobe support.
+            </p>
+          </div>
+          <a class="button primary" href="mailto:support@aiwardrobe.app">
+            support@aiwardrobe.app
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      AIWardrobe legal landing. Replace the support email and company details
+      before publishing if needed.
+    </footer>
+  </body>
+</html>

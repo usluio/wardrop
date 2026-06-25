@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AIWardrobe Terms of Service</title>
+    <meta
+      name="description"
+      content="AIWardrobe terms of service for accounts, subscriptions, credits, uploaded photos, AI try-on generation, and app store billing."
+    />
+    <style>
+      :root {
+        --bg: #0d0d0d;
+        --surface: #151515;
+        --line: rgba(255, 255, 255, 0.14);
+        --text: #f7f2ee;
+        --muted: rgba(247, 242, 238, 0.7);
+        --accent: #d8b392;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        letter-spacing: 0;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .nav {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 18px;
+        padding: 18px clamp(18px, 4vw, 56px);
+        border-bottom: 1px solid var(--line);
+        background: rgba(13, 13, 13, 0.88);
+        backdrop-filter: blur(16px);
+      }
+
+      .brand {
+        font-size: 15px;
+        font-weight: 720;
+        text-decoration: none;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 16px;
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 13px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+      }
+
+      .hero {
+        width: min(1060px, calc(100% - 36px));
+        margin: 0 auto;
+        padding: 92px 0 54px;
+      }
+
+      .eyebrow {
+        margin: 0 0 12px;
+        color: rgba(255, 255, 255, 0.64);
+        font-size: 13px;
+        font-weight: 650;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 820px;
+        margin: 0;
+        font-size: clamp(42px, 7vw, 86px);
+        line-height: 0.98;
+        font-weight: 760;
+      }
+
+      .lead {
+        max-width: 720px;
+        margin: 22px 0 0;
+        color: var(--muted);
+        font-size: clamp(16px, 2vw, 20px);
+        line-height: 1.58;
+      }
+
+      .toc {
+        width: min(1060px, calc(100% - 36px));
+        margin: 0 auto;
+        padding: 24px 0 42px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .toc a {
+        min-height: 40px;
+        display: inline-flex;
+        align-items: center;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 0 14px;
+        color: rgba(255, 255, 255, 0.76);
+        font-size: 13px;
+        text-decoration: none;
+      }
+
+      main {
+        width: min(1060px, calc(100% - 36px));
+        margin: 0 auto;
+      }
+
+      section {
+        display: grid;
+        grid-template-columns: minmax(0, 0.52fr) minmax(0, 1fr);
+        gap: clamp(24px, 5vw, 72px);
+        padding: 46px 0;
+        border-top: 1px solid var(--line);
+      }
+
+      h2 {
+        margin: 0;
+        font-size: clamp(24px, 3vw, 38px);
+        line-height: 1.08;
+      }
+
+      .copy {
+        display: grid;
+        gap: 16px;
+      }
+
+      p,
+      li {
+        margin: 0;
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.75;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+
+      strong {
+        color: var(--text);
+      }
+
+      .notice {
+        margin-top: 8px;
+        border-left: 2px solid var(--accent);
+        padding-left: 16px;
+        color: rgba(255, 255, 255, 0.82);
+      }
+
+      footer {
+        width: min(1060px, calc(100% - 36px));
+        margin: 0 auto;
+        padding: 34px 0 46px;
+        border-top: 1px solid var(--line);
+        color: rgba(255, 255, 255, 0.54);
+        font-size: 13px;
+      }
+
+      @media (max-width: 760px) {
+        .nav {
+          align-items: flex-start;
+        }
+
+        .nav-links {
+          gap: 12px;
+          font-size: 12px;
+        }
+
+        .hero {
+          padding-top: 64px;
+        }
+
+        section {
+          grid-template-columns: 1fr;
+          gap: 16px;
+          padding: 38px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav" aria-label="Legal navigation">
+      <a class="brand" href="./index.html">AIWardrobe</a>
+      <div class="nav-links">
+        <a href="./privacy.html">Privacy</a>
+        <a href="mailto:support@aiwardrobe.app">Contact</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <p class="eyebrow">Terms of Service · Last updated June 25, 2026</p>
+      <h1>Terms for using AIWardrobe.</h1>
+      <p class="lead">
+        These terms explain the rules for accounts, subscriptions, credits,
+        uploaded photos, outfit images, AI-generated try-on results, and
+        third-party services used to operate AIWardrobe.
+      </p>
+    </header>
+
+    <div class="toc" aria-label="Page sections">
+      <a href="#acceptance">Acceptance</a>
+      <a href="#account">Account</a>
+      <a href="#content">Photos and content</a>
+      <a href="#ai">AI processing</a>
+      <a href="#billing">Subscriptions</a>
+      <a href="#limits">Restrictions</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <main>
+      <section id="acceptance">
+        <h2>1. Acceptance</h2>
+        <div class="copy">
+          <p>
+            By downloading, accessing, creating an account, purchasing a plan,
+            uploading content, or generating images with AIWardrobe, you agree
+            to these Terms of Service and the Privacy Policy.
+          </p>
+          <p>
+            If you use AIWardrobe on behalf of another person or organization,
+            you confirm that you have authority to accept these terms for them.
+          </p>
+          <p class="notice">
+            Replace the owner name, business address, and jurisdiction before
+            publishing if AIWardrobe is operated by a registered company.
+          </p>
+        </div>
+      </section>
+
+      <section id="account">
+        <h2>2. Account and eligibility</h2>
+        <div class="copy">
+          <p>
+            You must provide accurate registration information and keep your
+            login credentials secure. You are responsible for activity that
+            happens through your account unless caused by our failure to protect
+            the service.
+          </p>
+          <p>
+            AIWardrobe is not intended for children under 13. If local law
+            requires a higher minimum age or parental consent, you may use the
+            service only if that requirement is satisfied.
+          </p>
+        </div>
+      </section>
+
+      <section id="content">
+        <h2>3. Uploaded photos, outfits, and results</h2>
+        <div class="copy">
+          <p>
+            You keep ownership of photos, outfit images, prompts, and other
+            content you upload. You grant AIWardrobe a limited license to host,
+            copy, process, transmit, display, and create generated results from
+            that content solely to operate, secure, support, and improve the
+            service.
+          </p>
+          <p>
+            You must only upload content that you own or have permission to use.
+            Do not upload photos of another person unless you have the right to
+            use that person's likeness for AI try-on generation.
+          </p>
+          <p>
+            Generated results are AI outputs and may be inaccurate, distorted,
+            incomplete, delayed, unavailable, or unsuitable for commercial,
+            medical, biometric, identity, or professional decision-making.
+          </p>
+        </div>
+      </section>
+
+      <section id="ai">
+        <h2>4. Third-party AI processing</h2>
+        <div class="copy">
+          <p>
+            To generate try-on images, AIWardrobe sends uploaded user photos,
+            outfit reference images, generation prompts, and related technical
+            metadata to configured AI processing providers, currently KIE.ai.
+            KIE.ai may route requests through underlying model providers or
+            infrastructure needed to complete the generation.
+          </p>
+          <p>
+            Third-party providers process data under their own terms, privacy
+            policies, security practices, retention rules, and regional
+            transfer practices. You should not upload sensitive, confidential,
+            illegal, explicit, or private content that you do not want processed
+            by third-party AI systems.
+          </p>
+          <p>
+            AIWardrobe does not promise that third-party AI providers will
+            return a result, meet a specific quality level, delete temporary
+            processing copies immediately, or prevent every possible output
+            error.
+          </p>
+        </div>
+      </section>
+
+      <section id="billing">
+        <h2>5. Subscriptions, credits, and billing</h2>
+        <div class="copy">
+          <p>
+            AIWardrobe uses credits for image generation. Unless otherwise
+            stated in the app, one generated image request costs one credit.
+            Paid plans may include weekly, yearly, promotional, or special
+            offer credit allowances.
+          </p>
+          <p>
+            Purchases and renewals are processed through app store billing and
+            subscription service providers, including Apple App Store, Google
+            Play Billing where available, and RevenueCat. AIWardrobe does not
+            store raw card numbers.
+          </p>
+          <p>
+            Subscriptions renew automatically unless canceled before renewal
+            through the app store account where the purchase was made. Refunds,
+            chargebacks, taxes, payment failures, and cancellation timing may be
+            controlled by the applicable app store rules.
+          </p>
+          <p>
+            Credits may fail to apply or may be reversed if a purchase event is
+            rejected, refunded, canceled, duplicated, fraudulent, or not
+            received from the billing provider.
+          </p>
+        </div>
+      </section>
+
+      <section id="limits">
+        <h2>6. Restrictions</h2>
+        <div class="copy">
+          <p>You agree not to use AIWardrobe to:</p>
+          <ul>
+            <li>Upload illegal, abusive, hateful, exploitative, or explicit content.</li>
+            <li>Violate privacy, publicity, intellectual property, or contractual rights.</li>
+            <li>Impersonate others or create misleading identity, biometric, or verification material.</li>
+            <li>Reverse engineer, overload, scrape, resell, or interfere with the service.</li>
+            <li>Bypass credit, subscription, safety, rate limit, or security controls.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="availability">
+        <h2>7. Availability and changes</h2>
+        <div class="copy">
+          <p>
+            AIWardrobe may change, suspend, or discontinue features, providers,
+            prices, plans, models, storage behavior, or credit rules when needed
+            for reliability, security, legal compliance, or product updates.
+          </p>
+          <p>
+            We may update these terms from time to time. If a change materially
+            affects your rights or use of the service, we will provide notice in
+            the app, by email, or by updating this page.
+          </p>
+        </div>
+      </section>
+
+      <section id="disclaimers">
+        <h2>8. Disclaimers and liability</h2>
+        <div class="copy">
+          <p>
+            AIWardrobe is provided on an "as is" and "as available" basis. To
+            the maximum extent allowed by law, we disclaim warranties of
+            merchantability, fitness for a particular purpose, non-infringement,
+            uninterrupted availability, and error-free AI output.
+          </p>
+          <p>
+            To the maximum extent allowed by law, AIWardrobe will not be liable
+            for indirect, incidental, special, consequential, exemplary, or
+            punitive damages, or for lost profits, lost data, lost content, or
+            business interruption.
+          </p>
+        </div>
+      </section>
+
+      <section id="termination">
+        <h2>9. Termination</h2>
+        <div class="copy">
+          <p>
+            You may stop using AIWardrobe at any time and may request account
+            deletion. We may suspend or terminate access if you violate these
+            terms, create risk for other users, misuse the service, or if
+            required by law or a platform provider.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>10. Contact</h2>
+        <div class="copy">
+          <p>
+            For questions about these terms, subscriptions, credits, or account
+            deletion, contact
+            <a href="mailto:support@aiwardrobe.app">support@aiwardrobe.app</a>.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      This draft is product legal copy and should be reviewed by counsel before
+      public launch.
+    </footer>
+  </body>
+</html>
